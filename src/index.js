@@ -39,7 +39,7 @@ function formatDate(date) {
 function searchcity(city) {
     let apikey="82fa38deb37ad503o252e0t1394ccc8f";
     let apiurl=`https://api.shecodes.io/weather/v1/current?query=${city}&key=${apikey}&units=metric`;
-    axios.get(apiUrl).then(refreshweather);
+    axios.get(apiurl).then(refreshweather);
 }
 
 function handleSearchSubmit(event) {
@@ -51,4 +51,3 @@ function handleSearchSubmit(event) {
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit",handleSearchSubmit);
-searchcity("Lisbon");
