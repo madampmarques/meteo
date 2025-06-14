@@ -101,3 +101,8 @@ header {
 .weather-forecast-temperature {
   padding: 0 10px;
 }
+.weather-forecast {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
